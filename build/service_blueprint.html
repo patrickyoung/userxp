@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <title>Service Blueprint: CODE Orange Onboard Data Product (DevTest)</title>
+</head>
+<body>
+    <nav>
+        <ul>
+          <li><img style="max-height: 50px; max-width: 50px;" src="gsk_logo.png"></li>
+          <li><strong>Service Blueprint: CODE Orange Onboard Data Product (DevTest)</strong></li>
+        </ul>
+      </nav>
+    <main class="container-fluid">
+        <table>
+            <thead>
+                <tr>
+                    <th style="font-weight: bolder;color: #446e79">TIME</th>
+                    <th style="text-align:center; border-left: dotted 3px; border-right: dotted 3px; color: #446e79;" scope="col" colspan="1">🕖 30-60 mins</th>
+                    <th style="text-align:center; border-left: dotted 3px; border-right: dotted 3px; color: #446e79;" scope="col" colspan="3">🕖 1-3 days</th>
+                    <th style="text-align:center; border-left: dotted 3px; border-right: dotted 3px; color: #446e79;" scope="col" colspan="2">🕖 2-5 days</th>
+                    </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row" style="font-weight: bolder;color: #446e79;">EVIDENCE</th>
+                    <td>
+                        <ul>
+                        <li>Meeting with Product Manager</li><li>Notes from meeting</li>
+                        </ul>
+                    </td><td>
+                        <ul>
+                        <li>Email of security groups creation request</li>
+                        </ul>
+                    </td><td>
+                        <ul>
+                        <li>SailPoint Groups</li>
+                        </ul>
+                    </td><td>
+                        <ul>
+                        <li>Confirmation email from Product Manager</li>
+                        </ul>
+                    </td><td>
+                        <ul>
+                        <li>GitHub commit in data product repository</li>
+                        </ul>
+                    </td><td>
+                        <ul>
+                        <li>Azure DevOps pipeline report</li><li>Azure Portal confirmation of resources</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row" style="font-weight: bolder; color: #446e79;">CUSTOMER JOURNEY</th>
+                    <td>
+                        <article>
+                            Meet with CO Product Manager to review requirements
+                        </article>
+                    </td><td>
+                        <article>
+                            Receive confirmation the security group creation request has been sent
+                        </article>
+                    </td><td>
+                        <article>
+                            Receive confirmation of request acceptance and estimated data of completion
+                        </article>
+                    </td><td>
+                        <article>
+                            Wait for Product Manager email confirming security groups have been created
+                        </article>
+                    </td><td>
+                        <article>
+                            Create data product configuration in GitHub for DevTest environment
+                        </article>
+                    </td><td>
+                        <article>
+                            Request deployment of infrastructure via GitHub Configuration
+                        </article>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row" style="font-weight: bolder;color: #446e79;"><small>LINE OF INTERACTION</small></th>
+                    <td colspan="6">
+                        <hr style="border-top: dotted 3px;">
+                    </td><td colspan="6">
+                        <hr style="border-top: dotted 3px;">
+                    </td><td colspan="6">
+                        <hr style="border-top: dotted 3px;">
+                    </td><td colspan="6">
+                        <hr style="border-top: dotted 3px;">
+                    </td><td colspan="6">
+                        <hr style="border-top: dotted 3px;">
+                    </td><td colspan="6">
+                        <hr style="border-top: dotted 3px;">
+                    </td>
+                </tr>
+                <tr>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th scope="row" style="font-weight: bolder;color: #446e79;">EMPLOYEE ACTIONS</th>
+                    <td>
+                        
+                        <article>
+                            <ul>
+                            <li>Schedule or Accept Meeting</li><li>Collect initial requirements / goals</li><li>Review security requirements; for ACLS</li><li>Assign Data Owners</li><li>Review any initial technical designs</li><li>Identify items that may require ARB approval</li>
+                            </ul>
+                        </article>
+                        
+                    </td><td>
+                        
+                        <article>
+                            <ul>
+                            <li>Send security group request to Rick via email + template</li><li>Provide clarity as needed</li><li>Wait for confirmation</li>
+                            </ul>
+                        </article>
+                        
+                    </td><td>
+                        
+                        <article>
+                            <ul>
+                            <li>Send update to Product Owner & requestor and include ETA</li>
+                            </ul>
+                        </article>
+                        
+                    </td><td>
+                        
+                        <article>
+                            <ul>
+                            <li>Product Manager notifies customer that the security groups have been created</li>
+                            </ul>
+                        </article>
+                        
+                    </td><td>
+                        
+                        <article>
+                            <ul>
+                            <li>Provide consulation and assistance as needed</li>
+                            </ul>
+                        </article>
+                        
+                    </td><td>
+                        
+                        <article>
+                            <ul>
+                            <li>CO Team runs Azure DevOps pipeline and notifies customer of results; can happen multiple times if there are bug/issues with the configuration</li><li>Notify Bu Tech team of completion status</li><li>Provide consulation and debuging assistance as needed</li>
+                            </ul>
+                        </article>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row" style="font-weight: bolder;color: #446e79;">TECHNOLOGY</th>
+                    <td>
+                        
+                        <article>Teams / Outlook</article>
+                        
+                    </td><td>
+                        
+                        <article>Outlook + Excel Workbook</article>
+                        
+                    </td><td>
+                        
+                        <article>SailPoint</article>
+                        
+                    </td><td>
+                        
+                        <article>Outlook</article>
+                        
+                    </td><td>
+                        
+                        <article>GitHub</article>
+                        
+                    </td><td>
+                        
+                        <article>GitHub & Azure DevOps</article>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row"><small>LINE OF VISIBILITY</small></th>
+                    <td colspan="6">
+                        <hr style="border-top: solid 3px;">
+                    </td><td colspan="6">
+                        <hr style="border-top: solid 3px;">
+                    </td><td colspan="6">
+                        <hr style="border-top: solid 3px;">
+                    </td><td colspan="6">
+                        <hr style="border-top: solid 3px;">
+                    </td><td colspan="6">
+                        <hr style="border-top: solid 3px;">
+                    </td><td colspan="6">
+                        <hr style="border-top: solid 3px;">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row" style="font-weight: bolder; color: #e36f41">BACKSTAGE ACTIONS</th>
+                    <td>
+                        
+                    </td><td>
+                        
+                        <article>
+                            <ul>
+                            <li>Review / refine groups with Product Manager</li>
+                            </ul>
+                        </article>
+                        
+                    </td><td>
+                        
+                        <article>
+                            <ul>
+                            <li>Allocate resource or take direct action to create security groups</li><li>Review / refine groups with Product Manager</li><li>Create groups in SailPoint</li><li>Notify Product Owner of completion</li>
+                            </ul>
+                        </article>
+                        
+                    </td><td>
+                        
+                    </td><td>
+                        
+                    </td><td>
+                        
+                        <article>
+                            <ul>
+                            <li>Run DevOPs Pipeline</li><li>Verify pipeline completion / status</li><li>Complete manual actions; if necessary</li><li>Debug as needed</li>
+                            </ul>
+                        </article>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row"><small>LINE OF INTERNAL INTERACTION</small></th>
+                    <td colspan="6">
+                        <hr style="border-top: dotted 3px;">
+                    </td><td colspan="6">
+                        <hr style="border-top: dotted 3px;">
+                    </td><td colspan="6">
+                        <hr style="border-top: dotted 3px;">
+                    </td><td colspan="6">
+                        <hr style="border-top: dotted 3px;">
+                    </td><td colspan="6">
+                        <hr style="border-top: dotted 3px;">
+                    </td><td colspan="6">
+                        <hr style="border-top: dotted 3px;">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row" style="font-weight: bolder;color: #e36f41">SUPPORT PROCESS</th>
+                    <td>
+                        
+                    </td><td>
+                        
+                    </td><td>
+                        
+                    </td><td>
+                        
+                    </td><td>
+                        
+                    </td><td>
+                        
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>

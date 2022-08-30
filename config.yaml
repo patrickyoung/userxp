@@ -1,0 +1,7 @@
+inputFiles: 
+  - ./templates/service_blueprint.tmpl
+outputFiles: 
+  - ./build/service_blueprint.html
+datasources:
+  data:
+    url: ./data/onboard_mesh_node.yaml

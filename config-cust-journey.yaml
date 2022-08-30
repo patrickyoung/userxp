@@ -1,0 +1,7 @@
+inputFiles: 
+  - ./templates/customer_journey_map.tmpl
+outputFiles: 
+  - ./build/customer_journey_map.html
+datasources:
+  data:
+    url: ./data/customer_journey_map_patrick.yaml

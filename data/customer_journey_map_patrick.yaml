@@ -1,0 +1,29 @@
+---
+persona_name: Patrick
+persona_kind: Platform Developer
+service: Onboard Data Product
+task: A simple task
+scenario: |
+  This is a simple task...
+expectations:
+  - one 
+  - two 
+  - three
+phases:
+  - name: Define
+    actions:
+      - one
+    thoughts:
+    emotions:
+  - name: Compare
+    actions:
+    thoughts:
+    emotions:
+  - name: Negotiate
+    actions:
+    thoughts:
+    emotions:
+  - name: Select
+    actions:
+    thoughts:
+    emotions:

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <title>{{ (datasource "data").title }}</title>
+</head>
+<body>
+    <nav>
+        <ul>
+          <li><img style="max-height: 50px; max-width: 50px;" src="gsk_logo.png"></li>
+          <li><strong>{{ (datasource "data").title }}</strong></li>
+        </ul>
+      </nav>
+    <main class="container-fluid">
+        <table>
+            <thead>
+                <tr>
+                    <th style="font-weight: bolder;color: #446e79">TIME</th>
+                    {{ range (datasource "data").touchpoints -}}
+                    {{ if .time -}}
+                        <th style="text-align:center; border-left: dotted 3px; border-right: dotted 3px; color: #446e79;" scope="col" colspan="{{ .timespan }}">🕖 {{ .time }}</th>
+                    {{ end -}}
+                    {{- end -}}
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row" style="font-weight: bolder;color: #446e79;">EVIDENCE</th>
+                    {{ range (datasource "data").touchpoints -}}
+                    <td>
+                        <ul>
+                        {{ range .evidence -}}
+                            <li>{{ . }}</li>
+                        {{- end }}
+                        </ul>
+                    </td>
+                    {{- end }}
+                </tr>
+                <tr>
+                    <th scope="row" style="font-weight: bolder; color: #446e79;">CUSTOMER JOURNEY</th>
+                    {{ range (datasource "data").touchpoints -}}
+                    <td>
+                        {{ if .customer_journey -}}
+                        <article>
+                            {{ .customer_journey }}
+                        </article>
+                        {{- end }}
+                    </td>
+                    {{- end }}
+                </tr>
+                <tr>
+                    <th scope="row" style="font-weight: bolder;color: #446e79;"><small>LINE OF INTERACTION</small></th>
+                    {{ range (datasource "data").touchpoints -}}
+                    <td colspan="{{ (len (datasource "data").touchpoints) }}">
+                        <hr style="border-top: dotted 3px;">
+                    </td>
+                    {{- end }}
+                </tr>
+                <tr>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th scope="row" style="font-weight: bolder;color: #446e79;">EMPLOYEE ACTIONS</th>
+                    {{ range (datasource "data").touchpoints -}}
+                    <td>
+                        {{ if .employee_actions }}
+                        <article>
+                            <ul>
+                            {{ range .employee_actions -}}
+                                <li>{{ . }}</li>
+                            {{- end }}
+                            </ul>
+                        </article>
+                        {{ end }}
+                    </td>
+                    {{- end }}
+                </tr>
+                <tr>
+                    <th scope="row" style="font-weight: bolder;color: #446e79;">TECHNOLOGY</th>
+                    {{ range (datasource "data").touchpoints -}}
+                    <td>
+                        {{ if .technology }}
+                        <article>{{ .technology }}</article>
+                        {{ end }}
+                    </td>
+                    {{- end }}
+                </tr>
+                <tr>
+                    <th scope="row"><small>LINE OF VISIBILITY</small></th>
+                    {{ range (datasource "data").touchpoints -}}
+                    <td colspan="{{ (len (datasource "data").touchpoints) }}">
+                        <hr style="border-top: solid 3px;">
+                    </td>
+                    {{- end }}
+                </tr>
+                <tr>
+                    <th scope="row" style="font-weight: bolder; color: #e36f41">BACKSTAGE ACTIONS</th>
+                    {{ range (datasource "data").touchpoints -}}
+                    <td>
+                        {{ if .backstage_actions }}
+                        <article>
+                            <ul>
+                            {{ range .backstage_actions -}}
+                                <li>{{ . }}</li>
+                            {{- end }}
+                            </ul>
+                        </article>
+                        {{ end }}
+                    </td>
+                    {{- end }}
+                </tr>
+                <tr>
+                    <th scope="row"><small>LINE OF INTERNAL INTERACTION</small></th>
+                    {{ range (datasource "data").touchpoints -}}
+                    <td colspan="{{ (len (datasource "data").touchpoints) }}">
+                        <hr style="border-top: dotted 3px;">
+                    </td>
+                    {{- end }}
+                </tr>
+                <tr>
+                    <th scope="row" style="font-weight: bolder;color: #e36f41">SUPPORT PROCESS</th>
+                    {{ range (datasource "data").touchpoints -}}
+                    <td>
+                        {{ if .support_process }}
+                        <article>{{ .support_process }}</article>
+                        {{ end }}
+                    </td>
+                    {{- end }}
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>

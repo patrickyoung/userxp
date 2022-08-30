@@ -1,0 +1,83 @@
+---
+title: "Service Blueprint: CODE Orange Onboard Data Product (DevTest)"
+touchpoints:
+  - time: 30-60 mins
+    timespan: 1
+    evidence:
+      - Meeting with Product Manager
+      - Notes from meeting
+    customer_journey: Meet with CO Product Manager to review requirements
+    employee_actions: 
+      - Schedule or Accept Meeting
+      - Collect initial requirements / goals
+      - Review security requirements; for ACLS
+      - Assign Data Owners
+      - Review any initial technical designs
+      - Identify items that may require ARB approval
+    technology: Teams / Outlook
+    backstage_actions:
+    support_process:
+  - time: 1-3 days
+    timespan: 3
+    evidence: 
+      - Email of security groups creation request
+    customer_journey: Receive confirmation the security group creation request has been sent
+    employee_actions: 
+      - Send security group request to Rick via email + template
+      - Provide clarity as needed
+      - Wait for confirmation
+    technology: Outlook + Excel Workbook
+    backstage_actions:
+      - Review / refine groups with Product Manager
+    support_process:
+  - time:
+    timespan:
+    evidence: 
+      - SailPoint Groups
+    customer_journey: Receive confirmation of request acceptance and estimated data of completion
+    employee_actions: 
+      - Send update to Product Owner & requestor and include ETA
+    technology: SailPoint
+    backstage_actions:
+      - Allocate resource or take direct action to create security groups
+      - Review / refine groups with Product Manager
+      - Create groups in SailPoint
+      - Notify Product Owner of completion
+    support_process:
+  - time:
+    timespan:
+    evidence: 
+      - Confirmation email from Product Manager
+    customer_journey: Wait for Product Manager email confirming security groups have been created
+    employee_actions:
+      - Product Manager notifies customer that the security groups have been created
+    technology: Outlook
+    backstage_actions:
+    support_process:
+  - time: 2-5 days
+    timespan: 2
+    evidence: 
+      - GitHub commit in data product repository
+    customer_journey: Create data product configuration in GitHub for DevTest environment
+    employee_actions:
+      - Provide consulation and assistance as needed
+    technology: GitHub
+    backstage_actions:
+    support_process:
+  - time:
+    timespan: 2
+    evidence: 
+      - Azure DevOps pipeline report
+      - Azure Portal confirmation of resources
+    customer_journey: Request deployment of infrastructure via GitHub Configuration
+    employee_actions:
+      - CO Team runs Azure DevOps pipeline and notifies customer of results; can happen multiple times if there are bug/issues with the configuration
+      - Notify Bu Tech team of completion status
+      - Provide consulation and debuging assistance as needed
+    technology: GitHub & Azure DevOps
+    backstage_actions: 
+      - Run DevOPs Pipeline
+      - Verify pipeline completion / status
+      - Complete manual actions; if necessary
+      - Debug as needed
+    support_process:
